@@ -65,7 +65,7 @@ public class ADetailSongFragment extends Fragment {
     }
 
     protected void initData() {
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         for (int i = 0; i < 50; i++)
         {
             mDatas.add("mtitle" + " -> " + i);

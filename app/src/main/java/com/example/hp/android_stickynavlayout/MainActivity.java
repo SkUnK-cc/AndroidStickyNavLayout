@@ -86,9 +86,9 @@ public class MainActivity extends AppCompatActivity implements SimpleViewPagerIn
 
         mStickNavLayout.setScrollListener(this);
 
-        int height = DisplayUtil.getScreenHeight(MainActivity.this)-DisplayUtil.dip2px(MainActivity.this,65)-mIndicator.getHeight();
+        int height = DisplayUtil.getScreenHeight(MainActivity.this)-DisplayUtil.dip2px(MainActivity.this,65)-DisplayUtil.dip2px(MainActivity.this,40);
         LinearLayout.LayoutParams layoutParams= (LinearLayout.LayoutParams) mViewPager.getLayoutParams();
-        layoutParams.height = 3000;
+        layoutParams.height = height;
         mViewPager.setLayoutParams(layoutParams);
     }
 
