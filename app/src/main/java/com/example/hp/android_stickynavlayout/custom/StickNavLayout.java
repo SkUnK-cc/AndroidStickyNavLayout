@@ -72,11 +72,6 @@ public class StickNavLayout extends LinearLayout implements NestedScrollingParen
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        //不限制顶部的高度
-//        getChildAt(0).measure(widthMeasureSpec,MeasureSpec.makeMeasureSpec(0,MeasureSpec.UNSPECIFIED));
-//        ViewGroup.LayoutParams params = mViewPager.getLayoutParams();
-//        params.height = getMeasuredHeight()-mNav.getMeasuredHeight();
-//        setMeasuredDimension(getMeasuredWidth(),mNav.getMeasuredHeight()+mViewPager.getMeasuredHeight());
     }
 
     /**
